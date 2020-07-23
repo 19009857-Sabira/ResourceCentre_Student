@@ -52,6 +52,7 @@ public class ResourceCentreTest {
 	public void addChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		
 	}
 	
 	@Test
@@ -101,12 +102,18 @@ public class ResourceCentreTest {
 	public void doReturnCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		// Item list is not null, so that can add a new item 
+		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
+		ResourceCentre.addCamcorder(camcorderList, cc1);		
+		assertEquals("Test if that Camcorder arraylist size is 1?", 1, camcorderList.size());
 	}
 	@Test
 	public void doReturnChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		// Item list is not null, so that can add a new item
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 	}
 	
 	@After
