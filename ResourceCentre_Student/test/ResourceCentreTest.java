@@ -119,8 +119,10 @@ public class ResourceCentreTest {
 		// Item list is not null, so that can add a new item 
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
-		ResourceCentre.addCamcorder(camcorderList, cc1);		
-		assertEquals("Test if that Camcorder arraylist size is 1?", 1, camcorderList.size());
+		//test if the list of camcorders retrieved from the SourceCentre is empty
+		String allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
 	}
 	@Test
 	public void doReturnChromebookTest() {
@@ -128,6 +130,11 @@ public class ResourceCentreTest {
 		// write your code here
 		// Item list is not null, so that can add a new item
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+
+		//test if the list of camcorders retrieved from the SourceCentre is empty
+		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 	}
 	
 	@After

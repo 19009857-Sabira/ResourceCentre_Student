@@ -223,6 +223,7 @@ public class ResourceCentre {
 	
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
 		// write your code here
+		
 		return true;
 	}
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
